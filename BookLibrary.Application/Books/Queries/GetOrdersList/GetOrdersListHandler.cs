@@ -22,6 +22,7 @@ namespace BookLibrary.Application.Books.Queries.GetOrdersList
 
             var result = orders.Select(o => new OrderDto
             {
+                UserId = o.UserId,
                 BookId = o.BookId,
                 BookTakenDate = o.BookTakenDate,
                 OrderStatus = o.OrderStatus,
